@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(./backgroundmulticolor.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            margin-top: 15px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #g1{
+            margin-left: 1230px;
+        }
+        h1{
+            margin-top: 180px;
+            margin-left: 580px;
+            margin-bottom: 30px;
+            font-size: 50px;
+        }
+        input{
+            width: 400px;
+            height: 40px;
+            margin-left: 450px;
+            border-radius: 25px;
+            padding-left: 40px;
+        }
+        #mic{
+            position: absolute;
+            left: 835px;
+            top: 315px;
+        }
+        #search{
+            position: absolute;
+            left: 465px;
+            top: 315px;
+        }
+        #qr{
+            position: absolute;
+            left: 860px;
+            top: 315px;
+        }
+        #shortcut{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255,0.3);
+            margin-left: 630px;
+            margin-top: 20px;
+        }
+        #plus{
+            position: absolute;
+            left: 648px;
+            top: 380px;
+        }
+        .pen{
+            position: absolute;
+            left: 1340px;
+            top: 630px;
+        }
+        .tamil{
+            padding-top: 210px;
+            padding-left: 20px;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="www.gmail.com" class="main" id="g1">Gmail</a>
+        <a href="www.instagram.com" class="main">Photos</a>
+        <i class="fa-solid fa-bars main"></i>
+    </div>
+    <div id="body">
+        <h1 >Google</h1>
+        <input type="text" list="search" placeholder="Search Google or type a URL" >
+        <datalist id="search">
+            <option >instagram</option>
+            <option >iloveu</option>
+            <option >ilovepdf</option>
+            <option >india</option>
+            <option >instanctcoffee</option>
+        </datalist>
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+        <i class="fa-solid fa-microphone" id="mic"></i>
+        <i class="fa-solid fa-qrcode" id="qr"></i>
+        <div id="shortcut">
+            <i class="fa-solid fa-plus" id="plus" ></i>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="tamil">Created by Tamilmani</div>
+        <i class="fa-solid fa-pen pen"></i>
+    </div>
+    
+</body>
+</html>

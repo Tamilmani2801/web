@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial- scale=1.0"> 
+<title>Document</title> 
+<script> 
+function signup_validation(){ 
+// Phone Number Validation 
+var Phone=document.getElementById("phone").value 
+var flag_phone=false 
+if((6000000000<=Phone)&&(Phone<=9999 
+999999)){ 
+flag_phone=true } 
+// Email Id Validation 
+var 
+Email=document.getElementById("email").v 
+alue 
+var flag_email=false 
+for(var i=0;i<Email.length;i++){ 
+if(Email[i]=='@'){ 
+flag_email=true 
+} 
+} 
+// Password Validation 
+var 
+Password=document.getElementById("pas 
+sword").value 
+var flag_password=false 
+var upper=0 
+var lower=0 
+var Num=0 
+var special=0 
+for(var i=0;i<Password.length;i++){ 
+if(('A'<=Password[i])&&(Password[i]<='Z')){ 
+upper++ }else 
+if(('a'<=Password[i])&&(Password[i]<='z')){ 
+lower++ 
+}else 
+if(('0'<=Password[i])&&(Password[i]<='9')){ 
+Num++ 
+}else{ 
+special++ 
+} 
+} 
+if((upper>=1)&&(lower>=1)&&(Num>=1)&&( 
+special>=1)&&(Password.length>=8)&&(Pa 
+ssword.length<=12)){ 
+flag_password=true 
+} 
+// Confirm Password Validation 
+var 
+confirm=document.getElementById("confir 
+m").value 
+var flag_confirm=false if(Password==confirm){ 
+flag_confirm=true 
+} 
+// Final Validation 
+if((flag_phone==true)&&(flag_email==true) 
+&&(flag_password==true)&&(flag_confirm= 
+=true)){ 
+} 
+window.location.href="./otp.html" 
+else{ 
+document.getElementById("error").innerHT 
+ML="Invalid Details" 
+document.getElementById("error").style.col 
+or="red" 
+} 
+} 
+</script> 
+</head> 
+<body> 
+<h1>Signup Page</h1> 
+<input type="text" placeholder="Phone Number" id="phone"> 
+<br> 
+<input type="text" placeholder="Email Id" id="email"> 
+<br> 
+<input type="text" 
+placeholder="Password" id="password"> 
+<br> 
+<input type="text" placeholder="Confirm Password" id="confirm"> 
+<br> 
+<button 
+onclick="signup_validation()">Register</ 
+button> 
+<p id="error"></p> 
+</body> 
+</html> 
+OTP: 
+*OTP Verification Page Code* 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" 
+content="width=device-width, initial- 
+scale=1.0"> 
+<title>Document</title> 
+<script> 
+var 
+otp=Math.floor(Math.random()*999999) 
+alert(otp) 
+function otp_verification(){ 
+var 
+user_otp=document.getElementById("OTP" 
+).value 
+if(otp==user_otp){ 
+window.location.href="./ 
+login.html" 
+} 
+else{ 
+document.getElementById("error").innerHT 
+ML="Incorrect OTP" 
+} 
+} 
+function resend_otp(){ 
+} 
+window.location.href="./otp.html" 
+</script> 
+</head> 
+<body> 
+OTP Page 
+<input type="text" id="OTP"> 
+<br> 
+<button 
+onclick="otp_verification()">Verify</button> 
+<p id="error"></p> 
+<button onclick="resend_otp()">Resend 
+OTP</button> 
+</body> </html> 
+*Login Page Validation Code* 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" 
+content="width=device-width, initial- 
+scale=1.0"> 
+<title>Document</title> 
+<script> 
+function login_Validation(){ 
+var 
+db={'Qspiders':'Qsp@1234','Jspiders': 'Jsp@ 3456','Pyspiders': 'PySp@0345'} 
+var 
+username=document.getElementById("use 
+rname").value 
+var 
+password=document.getElementById("pas 
+sword").value 
+var all_users-Object.keys(db) var flag=false 
+for(var i=0;i<all_users.length;i++){ 
+if((all_users[i]==username)&&(db[all_users[i]]==password))
+{ 
+flag=true 
+} 
+} 
+if(flag==true)
+{ 
+window.location.href="https://www.facebook.com" 
+}
+else
+{ 
+document.getElementById("error").innerHTML="Invalid Username or Incorrect Password" 
+} 
+} 
+</script> 
+</head> 
+<body> 
+<h1>LOGIN PAGE</h1> 
+<input type="text" id="username"> <br> 
+<input type="password" id="password"> 
+<br> 
+<button onclick="login_Validation()">Login</button> 
+<p id="error"></p> 
+</body> 
+</html> 

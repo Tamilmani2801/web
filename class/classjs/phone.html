@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            background-size: cover;
+        }
+        button{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+    </style>
+    <script>
+        function red(){
+            document.getElementById("image").style.backgroundImage="url(https://i.pinimg.com/originals/c4/11/cc/c411ccd02af6f000656a0469ecdfd202.jpg)"
+        }
+        function black(){
+            document.getElementById("image").style.backgroundImage="url(https://imgd-ct.aeplcdn.com/1056x660/n/gdclc4a_1515123.jpg?q=75)"
+        }
+        function white(){
+            document.getElementById("image").style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ62tEiE-W3A0FIWdNCNNQW4lbwKgfhCVxNA&usqp=CAU)"
+        }
+    </script>
+</head>
+<body>
+    <div id="image"></div>
+    <button style="background-color: red;" onclick="red()"></button>
+    <button style="background-color: black;" onclick="black()" ></button>
+    <button style="background-color: white;" onclick="white()"></button>
+</body>
+</html>

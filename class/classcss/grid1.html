@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            grid-area: A;
+        }
+        #b{
+            grid-area: B;
+        }
+        #c{
+            grid-area: C;
+        }
+        #d{
+            grid-area: D;
+        }
+        #e{
+            grid-area: E;
+        }
+        #f{
+            grid-area: F;
+        }
+        #g{
+            grid-area: G;
+        }
+        #h{
+            grid-area: H;
+        }
+        #i{
+            grid-area: I;
+        }
+        #j{
+            grid-area: J;
+        }
+        #k{
+            grid-area: K;
+        }
+        #l{
+            grid-area: L;
+        }
+        #m{
+            grid-area: M;
+        }
+        #n{
+            grid-area: N;
+        }
+        #o{
+            grid-area: O;
+        }
+        #p{
+            grid-area: P;
+        }
+        #q{
+            grid-area: Q;
+        }
+        #r{
+            grid-area: R;
+        }
+        .main-div{
+            background-color: white;
+            padding: 15px;
+            margin-left: 150px ;
+            margin-right: 150px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 300px;
+            display: grid;
+            grid-template-areas: 'A A A A''B B C D' 'E F G H' 'I J K L' 'M N O P' 'Q Q R P';
+        }
+        .main-div>div{
+            background-color: white;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin: 1px;
+        }
+        #a{
+            background-color: orangered;
+            color: white;
+        }
+        #b{
+            background-color: aqua;
+            color: white;
+        }
+        #c,#d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#p,#q,#r{
+            background-color: rgba(255, 68, 0, 0.596);
+            color: orangered;
+        }
+        #p{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div id="a">25</div>
+        <div id="b">clear</div>
+        <div id="c">-</div>
+        <div id="d">+</div>
+        <div id="e">7</div>
+        <div id="f">8</div>
+        <div id="g">9</div>
+        <div id="h">/</div>
+        <div id="i">4</div>
+        <div id="j">5</div>
+        <div id="k">6</div>
+        <div id="l">*</div>
+        <div id="m">1</div>
+        <div id="n">2</div>
+        <div id="o">3</div>
+        <div id="p">=</div>
+        <div id="q">0</div>
+        <div id="r">.</div>
+
+    </div>
+</body>
+</html>
